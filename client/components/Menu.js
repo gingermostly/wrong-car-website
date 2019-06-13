@@ -21,6 +21,7 @@ const NavMenu = styled.div`
     }
   }
   a {
+    font-family: Rokkitt, serif;
     font-size: 36px;
     line-height: 1;
     padding: 5px 0;
