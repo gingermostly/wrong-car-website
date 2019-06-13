@@ -6,6 +6,7 @@ const NavMenu = styled.div`
   ul {
     list-style: none;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
     margin-top: 20px;

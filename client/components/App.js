@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Menu from './Menu.js';
 import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -14,6 +15,11 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
+const MainContainer = styled.div`
+  max-width: 1024px;
+  margin: 0 auto;
+`;
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -22,7 +28,9 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <GlobalStyles />
-        <Menu />
+        <MainContainer>
+          <Menu />
+        </MainContainer>
       </React.Fragment>
     );
   }
