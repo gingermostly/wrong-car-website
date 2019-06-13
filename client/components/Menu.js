@@ -6,7 +6,6 @@ const NavMenu = styled.div`
   ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
     margin-top: 20px;
@@ -19,6 +18,32 @@ const NavMenu = styled.div`
     }
     &:last-child {
       padding-right: 0;
+    }
+  }
+  a {
+    font-size: 36px;
+    line-height: 1;
+    padding: 5px 0;
+    white-space: nowrap;
+    color: #c71742;
+    text-decoration: none;
+    position: relative;
+    &:hover {
+      background: transparent;
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: #c71742;
+      transform: scaleX(0);
+      transition: transform 400ms ease;
     }
   }
 `;
