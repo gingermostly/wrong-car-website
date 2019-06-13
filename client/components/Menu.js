@@ -1,4 +1,27 @@
-import * as React from "react";
+import * as React from 'react';
+import styled from 'styled-components';
+
+const NavMenu = styled.div`
+  width: 100%;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+  }
+  ul li {
+    padding: 8px 16px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+`;
 
 class Menu extends React.Component {
   constructor(props) {
@@ -6,7 +29,7 @@ class Menu extends React.Component {
   }
   render() {
     return (
-      <div>
+      <NavMenu>
         <ul>
           <li>
             <a href="">home</a>
@@ -27,7 +50,7 @@ class Menu extends React.Component {
             <a href="">decoder ring</a>
           </li>
         </ul>
-      </div>
+      </NavMenu>
     );
   }
 }
