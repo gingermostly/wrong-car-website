@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Menu from './Menu.js';
 import Header from './Header.js';
+import Main from './Main.js';
 import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 
@@ -32,6 +33,7 @@ class App extends React.Component {
         <MainContainer>
           <Header />
           <Menu />
+          <Main />
         </MainContainer>
       </React.Fragment>
     );
