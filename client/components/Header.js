@@ -74,22 +74,22 @@ class Header extends React.Component {
         </HeaderImg>
         <ul>
           <li>
-            <a href="">home</a>
+            <Link to="/">home</Link>
           </li>
           <li>
-            <a href="">tour dates</a>
+            <Link to="/tour">tour dates</Link>
           </li>
           <li>
-            <a href="">gigography</a>
+            <Link to="/gigography">gigography</Link>
           </li>
           <li>
-            <a href="">photos</a>
+            <Link to="/photos">photos</Link>
           </li>
           <li>
             <Link to="/lyrics">lyrics</Link>
           </li>
           <li>
-            <a href="">decoder ring</a>
+            <Link to="/decoder">decoder ring</Link>
           </li>
         </ul>
       </NavMenu>
