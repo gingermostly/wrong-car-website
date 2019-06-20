@@ -24,6 +24,11 @@ const AlbumNav = styled.nav`
     transform: scale(1) rotate(0);
     position: relative;
     z-index: 1;
+    &:hover {
+      transform: scale(1.1) rotate(8deg);
+      z-index: 2;
+      box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.3);
+    }
   }
 `;
 
