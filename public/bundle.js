@@ -154,7 +154,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\n\n\nvar Lyrics =\n/*#__PURE__*/\nfunction (_React$Component) {\n  _inherits(Lyrics, _React$Component);\n\n  function Lyrics(props) {\n    _classCallCheck(this, Lyrics);\n\n    return _possibleConstructorReturn(this, _getPrototypeOf(Lyrics).call(this, props));\n  }\n\n  _createClass(Lyrics, [{\n    key: \"render\",\n    value: function render() {\n      return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"div\", null, \"LYRICS\");\n    }\n  }]);\n\n  return Lyrics;\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Lyrics);\n\n//# sourceURL=webpack:///./client/components/Lyrics.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ \"./node_modules/styled-components/dist/styled-components.browser.esm.js\");\n/* harmony import */ var _public_img_album_faafw_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../public/img/album-faafw.jpg */ \"./public/img/album-faafw.jpg\");\n/* harmony import */ var _public_img_album_faafw_jpg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_public_img_album_faafw_jpg__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _public_img_album_neversnowed_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../public/img/album-neversnowed.jpg */ \"./public/img/album-neversnowed.jpg\");\n/* harmony import */ var _public_img_album_neversnowed_jpg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_public_img_album_neversnowed_jpg__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _public_img_album_ftna_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../public/img/album-ftna.jpg */ \"./public/img/album-ftna.jpg\");\n/* harmony import */ var _public_img_album_ftna_jpg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_img_album_ftna_jpg__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _public_img_album_wrongcar_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../public/img/album-wrongcar.jpg */ \"./public/img/album-wrongcar.jpg\");\n/* harmony import */ var _public_img_album_wrongcar_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_public_img_album_wrongcar_jpg__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _public_img_album_nocek_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../public/img/album-nocek.jpg */ \"./public/img/album-nocek.jpg\");\n/* harmony import */ var _public_img_album_nocek_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_public_img_album_nocek_jpg__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _public_img_album_nwtbhanwtl_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../public/img/album-nwtbhanwtl.jpg */ \"./public/img/album-nwtbhanwtl.jpg\");\n/* harmony import */ var _public_img_album_nwtbhanwtl_jpg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_public_img_album_nwtbhanwtl_jpg__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _public_img_album_iwbltatt_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../public/img/album-iwbltatt.jpg */ \"./public/img/album-iwbltatt.jpg\");\n/* harmony import */ var _public_img_album_iwbltatt_jpg__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_public_img_album_iwbltatt_jpg__WEBPACK_IMPORTED_MODULE_8__);\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _templateObject() {\n  var data = _taggedTemplateLiteral([\"\\n  margin-top: 40px;\\n  display: grid;\\n  grid-column-gap: 8px;\\n  grid-auto-flow: column;\\n  max-width: 100%;\\n  grid-template-columns: repeat(min-content);\\n  img {\\n    max-width: 100%;\\n    height: auto;\\n    display: block;\\n    cursor: pointer;\\n    transition: transform 150ms ease-in-out;\\n    transform: scale(1) rotate(0);\\n    position: relative;\\n    z-index: 1;\\n  }\\n\"]);\n\n  _templateObject = function _templateObject() {\n    return data;\n  };\n\n  return data;\n}\n\nfunction _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\n\n\n\n\n\n\n\n\n\nvar AlbumNav = styled_components__WEBPACK_IMPORTED_MODULE_1__[\"default\"].nav(_templateObject());\n\nvar Lyrics =\n/*#__PURE__*/\nfunction (_React$Component) {\n  _inherits(Lyrics, _React$Component);\n\n  function Lyrics(props) {\n    _classCallCheck(this, Lyrics);\n\n    return _possibleConstructorReturn(this, _getPrototypeOf(Lyrics).call(this, props));\n  }\n\n  _createClass(Lyrics, [{\n    key: \"render\",\n    value: function render() {\n      return react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](AlbumNav, null, react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"img\", {\n        src: _public_img_album_faafw_jpg__WEBPACK_IMPORTED_MODULE_2___default.a\n      }), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"img\", {\n        src: _public_img_album_neversnowed_jpg__WEBPACK_IMPORTED_MODULE_3___default.a\n      }), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"img\", {\n        src: _public_img_album_ftna_jpg__WEBPACK_IMPORTED_MODULE_4___default.a\n      }), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"img\", {\n        src: _public_img_album_wrongcar_jpg__WEBPACK_IMPORTED_MODULE_5___default.a\n      }), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"img\", {\n        src: _public_img_album_nocek_jpg__WEBPACK_IMPORTED_MODULE_6___default.a\n      }), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"img\", {\n        src: _public_img_album_nwtbhanwtl_jpg__WEBPACK_IMPORTED_MODULE_7___default.a\n      }), react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"img\", {\n        src: _public_img_album_iwbltatt_jpg__WEBPACK_IMPORTED_MODULE_8___default.a\n      }));\n    }\n  }]);\n\n  return Lyrics;\n}(react__WEBPACK_IMPORTED_MODULE_0__[\"Component\"]);\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Lyrics);\n\n//# sourceURL=webpack:///./client/components/Lyrics.js?");
 
 /***/ }),
 
@@ -495,7 +495,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -710,6 +710,83 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, exports) {
 
 eval("module.exports = function(originalModule) {\n\tif (!originalModule.webpackPolyfill) {\n\t\tvar module = Object.create(originalModule);\n\t\t// module.parent = undefined by default\n\t\tif (!module.children) module.children = [];\n\t\tObject.defineProperty(module, \"loaded\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.l;\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(module, \"id\", {\n\t\t\tenumerable: true,\n\t\t\tget: function() {\n\t\t\t\treturn module.i;\n\t\t\t}\n\t\t});\n\t\tObject.defineProperty(module, \"exports\", {\n\t\t\tenumerable: true\n\t\t});\n\t\tmodule.webpackPolyfill = 1;\n\t}\n\treturn module;\n};\n\n\n//# sourceURL=webpack:///(webpack)/buildin/harmony-module.js?");
+
+/***/ }),
+
+/***/ "./public/img/album-faafw.jpg":
+/*!************************************!*\
+  !*** ./public/img/album-faafw.jpg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/6dcfea9d454bb5401c9e3c857ef58ee8.jpg\";\n\n//# sourceURL=webpack:///./public/img/album-faafw.jpg?");
+
+/***/ }),
+
+/***/ "./public/img/album-ftna.jpg":
+/*!***********************************!*\
+  !*** ./public/img/album-ftna.jpg ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/72c7ddac5451219d3dc05ad47061c158.jpg\";\n\n//# sourceURL=webpack:///./public/img/album-ftna.jpg?");
+
+/***/ }),
+
+/***/ "./public/img/album-iwbltatt.jpg":
+/*!***************************************!*\
+  !*** ./public/img/album-iwbltatt.jpg ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/ca7873c822b15dcbec1d54d1d1a43143.jpg\";\n\n//# sourceURL=webpack:///./public/img/album-iwbltatt.jpg?");
+
+/***/ }),
+
+/***/ "./public/img/album-neversnowed.jpg":
+/*!******************************************!*\
+  !*** ./public/img/album-neversnowed.jpg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/b82b5fe5827098448214bf6de25dc826.jpg\";\n\n//# sourceURL=webpack:///./public/img/album-neversnowed.jpg?");
+
+/***/ }),
+
+/***/ "./public/img/album-nocek.jpg":
+/*!************************************!*\
+  !*** ./public/img/album-nocek.jpg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/3d4381d42e09a6fab18510cc54218389.jpg\";\n\n//# sourceURL=webpack:///./public/img/album-nocek.jpg?");
+
+/***/ }),
+
+/***/ "./public/img/album-nwtbhanwtl.jpg":
+/*!*****************************************!*\
+  !*** ./public/img/album-nwtbhanwtl.jpg ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/e11b830547b0e7d0fa9020ce0a69534f.jpg\";\n\n//# sourceURL=webpack:///./public/img/album-nwtbhanwtl.jpg?");
+
+/***/ }),
+
+/***/ "./public/img/album-wrongcar.jpg":
+/*!***************************************!*\
+  !*** ./public/img/album-wrongcar.jpg ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"images/7dee951971c5f3b75098c7f81768d525.jpg\";\n\n//# sourceURL=webpack:///./public/img/album-wrongcar.jpg?");
 
 /***/ }),
 
