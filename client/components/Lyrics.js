@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import lyricData from '../data/lyrics.data.js';
 import fourteenAutumns from '../../public/img/album-faafw.jpg';
 import neverSnowed from '../../public/img/album-neversnowed.jpg';
 import forget from '../../public/img/album-ftna.jpg';
@@ -39,13 +40,9 @@ class Lyrics extends React.Component {
   render() {
     return (
       <AlbumNav>
-        <img src={fourteenAutumns} />
-        <img src={neverSnowed} />
-        <img src={forget} />
-        <img src={wrongCar} />
-        <img src={noOne} />
-        <img src={nobody} />
-        <img src={itWont} />
+        {lyricData.map(album => {
+          return <img src={album.image} />;
+        })}
       </AlbumNav>
     );
   }
