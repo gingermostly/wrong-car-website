@@ -10,7 +10,7 @@ import itWont from '../../public/img/album-iwbltatt.jpg';
 const lyricData = [
   {
     id: 'faafw',
-    album: 'fourteen autumns & fifteen winters',
+    title: 'fourteen autumns & fifteen winters',
     image: fourteenAutumns,
     songs: [
       {
@@ -136,7 +136,7 @@ const lyricData = [
   },
   {
     id: 'neversnowed',
-    album: 'here it never snowed, afterwards it did',
+    title: 'here it never snowed, afterwards it did',
     image: neverSnowed,
     songs: [
       {
@@ -147,7 +147,7 @@ const lyricData = [
   },
   {
     id: 'ftna',
-    album: 'forget the night ahead',
+    title: 'forget the night ahead',
     image: forget,
     songs: [
       {
@@ -198,7 +198,7 @@ const lyricData = [
   },
   {
     id: 'wrongcar',
-    album: 'the wrong car',
+    title: 'the wrong car',
     image: wrongCar,
     songs: [
       {
@@ -213,7 +213,7 @@ const lyricData = [
   },
   {
     id: 'nocek',
-    album: 'no one can ever know',
+    title: 'no one can ever know',
     image: noOne,
     songs: [
       {
@@ -260,7 +260,7 @@ const lyricData = [
   },
   {
     id: 'nwtbhanwtl',
-    album: 'nobody wants to be here and nobody wants to leave',
+    title: 'nobody wants to be here and nobody wants to leave',
     image: nobody,
     songs: [
       {
@@ -311,7 +311,7 @@ const lyricData = [
   },
   {
     id: 'iwbltatt',
-    album: 'it won/t be like this all the time',
+    title: 'it won/t be like this all the time',
     image: itWont,
     songs: [
       {

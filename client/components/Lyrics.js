@@ -1,13 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import lyricData from '../data/lyrics.data.js';
-import fourteenAutumns from '../../public/img/album-faafw.jpg';
-import neverSnowed from '../../public/img/album-neversnowed.jpg';
-import forget from '../../public/img/album-ftna.jpg';
-import wrongCar from '../../public/img/album-wrongcar.jpg';
-import noOne from '../../public/img/album-nocek.jpg';
-import nobody from '../../public/img/album-nwtbhanwtl.jpg';
-import itWont from '../../public/img/album-iwbltatt.jpg';
 
 const AlbumNav = styled.nav`
   margin-top: 40px;
@@ -36,14 +29,42 @@ const AlbumNav = styled.nav`
 class Lyrics extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      currentAlbum: '',
+    };
+    this.handleClick = this.handleClick.bind(this);
   }
+  handleClick(e) {
+    this.setState({
+      currentAlbum: e.target.dataset.album,
+    });
+  }
+
   render() {
     return (
-      <AlbumNav>
-        {lyricData.map(album => {
-          return <img src={album.image} />;
-        })}
-      </AlbumNav>
+      <div>
+        <AlbumNav onClick={this.handleClick}>
+          {lyricData.map(album => {
+            return (
+              <img
+                key={album.title}
+                data-album={album.title}
+                src={album.image}
+              />
+            );
+          })}
+        </AlbumNav>
+        <ul>
+          {lyricData.map(album => {
+            if (album.title === this.state.currentAlbum) {
+              return album.songs.map(song => {
+                console.log(song.name);
+                return <li>{song.name}</li>;
+              });
+            }
+          })}
+        </ul>
+      </div>
     );
   }
 }
