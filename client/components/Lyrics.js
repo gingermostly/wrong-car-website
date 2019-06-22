@@ -26,6 +26,35 @@ const AlbumNav = styled.nav`
   }
 `;
 
+const SongList = styled.div`
+  text-align: center;
+  h3 {
+    margin: 40px 0 20px 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: normal;
+    font-family: Oswald, sans-serif;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  button {
+    font-family: Rokkitt;
+    font-size: 25px;
+    background: transparent;
+    border: 0;
+    color: #c71742;
+    outline: 0;
+    &:hover {
+      background: #c71742;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+`;
+
 class Lyrics extends React.Component {
   constructor(props) {
     super(props);
@@ -54,16 +83,26 @@ class Lyrics extends React.Component {
             );
           })}
         </AlbumNav>
-        <ul>
+        <SongList>
           {lyricData.map(album => {
             if (album.title === this.state.currentAlbum) {
-              return album.songs.map(song => {
-                console.log(song.name);
-                return <li>{song.name}</li>;
-              });
+              return (
+                <div>
+                  <h3>{album.title}</h3>
+                  <ul>
+                    {album.songs.map(song => {
+                      return (
+                        <li>
+                          <button>{song.name}</button>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
             }
           })}
-        </ul>
+        </SongList>
       </div>
     );
   }
