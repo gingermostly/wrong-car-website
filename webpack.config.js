@@ -1,3 +1,5 @@
+/** @format */
+
 module.exports = {
   entry: `${__dirname}/client/src/index.js`,
   output: {
@@ -24,6 +26,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
-};
+}

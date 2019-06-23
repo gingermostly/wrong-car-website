@@ -1,6 +1,10 @@
-import * as React from 'react';
-import styled from 'styled-components';
-import lyricData from '../data/lyrics.data.js';
+/** @format */
+
+import * as React from 'react'
+import styled from 'styled-components'
+import lyricData from '../data/lyrics.data.js'
+import {SlideDown} from 'react-slidedown'
+import 'react-slidedown/lib/slidedown.css'
 
 const AlbumNav = styled.nav`
   margin-top: 40px;
@@ -24,7 +28,7 @@ const AlbumNav = styled.nav`
       box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.3);
     }
   }
-`;
+`
 
 const SongList = styled.div`
   text-align: center;
@@ -53,34 +57,35 @@ const SongList = styled.div`
       cursor: pointer;
     }
   }
-`;
+`
 
 class Lyrics extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       currentAlbum: '',
-    };
-    this.handleClick = this.handleClick.bind(this);
+      currentSong: '',
+    }
+    this.handleClick = this.handleClick.bind(this)
+    this.handleSongClick = this.handleSongClick.bind(this)
   }
   handleClick(e) {
     this.setState({
       currentAlbum: e.target.dataset.album,
-    });
+    })
   }
-
+  handleSongClick(e) {
+    const checkSong = this.state.currentSong === e.target.dataset.song ? '' : e.target.dataset.song
+    this.setState({
+      currentSong: checkSong,
+    })
+  }
   render() {
     return (
       <div>
         <AlbumNav onClick={this.handleClick}>
           {lyricData.map(album => {
-            return (
-              <img
-                key={album.title}
-                data-album={album.title}
-                src={album.image}
-              />
-            );
+            return <img key={album.title} data-album={album.title} src={album.image} />
           })}
         </AlbumNav>
         <SongList>
@@ -92,20 +97,23 @@ class Lyrics extends React.Component {
                   <ul>
                     {album.songs.map(song => {
                       return (
-                        <li>
-                          <button>{song.name}</button>
+                        <li key={song.name}>
+                          <button data-song={song.name} onClick={this.handleSongClick}>
+                            {song.name}
+                          </button>
+                          <SlideDown>{song.name === this.state.currentSong && <div>{song.lyrics}</div>}</SlideDown>
                         </li>
-                      );
+                      )
                     })}
                   </ul>
                 </div>
-              );
+              )
             }
           })}
         </SongList>
       </div>
-    );
+    )
   }
 }
 
-export default Lyrics;
+export default Lyrics
