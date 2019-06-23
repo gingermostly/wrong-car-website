@@ -58,6 +58,10 @@ const SongList = styled.div`
     }
   }
 `
+const SongLyrics = styled.div`
+  white-space: pre-line;
+  padding: 12px 0 30px 0;
+`
 
 class Lyrics extends React.Component {
   constructor(props) {
@@ -101,7 +105,9 @@ class Lyrics extends React.Component {
                           <button data-song={song.name} onClick={this.handleSongClick}>
                             {song.name}
                           </button>
-                          <SlideDown>{song.name === this.state.currentSong && <div>{song.lyrics}</div>}</SlideDown>
+                          <SlideDown>
+                            {song.name === this.state.currentSong && <SongLyrics>{song.lyrics}</SongLyrics>}
+                          </SlideDown>
                         </li>
                       )
                     })}
