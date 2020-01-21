@@ -1,10 +1,11 @@
 /** @format */
+const path = require('path');
 
 module.exports = {
-  entry: `${__dirname}/client/src/index.js`,
+  entry: [path.resolve(__dirname, 'client/src/index.js')],
   output: {
     filename: 'bundle.js',
-    path: `${__dirname}/public`,
+    path: path.resolve(__dirname, 'public'),
   },
   module: {
     rules: [
@@ -33,3 +34,4 @@ module.exports = {
     ],
   },
 }
+

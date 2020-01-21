@@ -53,7 +53,7 @@ const SongList = styled.div`
     outline: 0;
     &:hover {
       background: #c71742;
-      color: #fff;
+      color: #000;
       cursor: pointer;
     }
   }

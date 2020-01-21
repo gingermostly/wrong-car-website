@@ -1,18 +1,21 @@
 {
   "name": "wrong-car",
   "version": "1.0.0",
-  "description": "React version of Twilight Sad fan page",
+  "description": "React version of Twilight Sad fan website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server/index.js",
-    "build": "webpack --watch --config ./webpack.config.js --mode development"
+    "build": "webpack --watch --mode development"
   },
   "author": "Ginger Barham",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.16.4",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.8.9",
     "nodemon": "^1.19.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
