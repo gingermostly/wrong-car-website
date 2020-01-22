@@ -20,18 +20,18 @@ const gigSchema = {
 
 const Gig = mongoose.model('Gig', gigSchema);
 
-let testGig = new Gig({
-    date: '06/12/2016',
-    city: 'Toronto',
-    state: 'ON',
-    country: 'Canada',
-    venue: 'Woodbine Park',
-    details: 'Bestival Music Festival - with the Cure'
-});
+// let addGig = new Gig({
+//     date: '06/12/2016',
+//     city: 'Toronto',
+//     state: 'ON',
+//     country: 'Canada',
+//     venue: 'Woodbine Park',
+//     details: 'Bestival Music Festival - with the Cure'
+// });
 
-testGig.save((err, data)=>{
-    if(err){
-        console.log(err)
-    }
-    console.log(data)
-})
+// addGig.save((err, data)=>{
+//     if(err){
+//         console.log(err)
+//     }
+//     console.log(data)
+// })
