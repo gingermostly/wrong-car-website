@@ -5,7 +5,13 @@ class GigTableHeader extends React.Component {
     super(props);
   }
   render() {
-    return <div>GIGOGRAPHY TABLE HEADER</div>;
+    return <thead><tr>
+        <th>DATE</th>
+        <th>CITY</th>
+        <th>COUNTRY</th>
+        <th>VENUE</th>
+        <th>DETAILS</th>
+        </tr></thead>;
   }
 }
 
