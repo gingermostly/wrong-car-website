@@ -1,5 +1,3 @@
-/** @format */
-
 import * as React from 'react'
 import styled from 'styled-components'
 import lyricData from '../data/lyrics.data.js'
@@ -12,7 +10,6 @@ const AlbumNav = styled.nav`
   grid-column-gap: 8px; 
   grid-auto-flow: column;
   max-width: 100%;
-  grid-template-columns: repeat(min-content); // this is not valid css, and not necessary anyway
   img {
     // might be good to have a comment here about how you're scaling the images for responsive
     max-width: 100%;
@@ -25,7 +22,7 @@ const AlbumNav = styled.nav`
     z-index: 1;
     &:hover {
       transform: scale(1.1) rotate(8deg);
-      z-index: 2; // I'd comment here something like "ensure the hovered element is above the others in z order"
+      z-index: 2; // ensure image remains on top of other elements when hovering
       box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.3);
     }
   }
@@ -60,7 +57,7 @@ const SongList = styled.div`
   }
 `
 const SongLyrics = styled.div`
-  white-space: pre-line; // comment here about maintaining poetry's whitespace or something
+  white-space: pre-line; // maintain white space to preserve poetry formatting of lyrics
   padding: 12px 0 30px 0;
 `
 
@@ -80,7 +77,7 @@ class Lyrics extends React.Component {
     })
   }
   handleSongClick(e) {
-    // I might comment something like "set current song or toggle if clicking the same one"
+    // Set current song to clicked song. If clicked song is same as current song, toggle by setting current song to ''
     const checkSong = this.state.currentSong === e.target.dataset.song ? '' : e.target.dataset.song
     this.setState({
       currentSong: checkSong,
