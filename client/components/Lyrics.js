@@ -9,11 +9,12 @@ import 'react-slidedown/lib/slidedown.css'
 const AlbumNav = styled.nav`
   margin-top: 40px;
   display: grid;
-  grid-column-gap: 8px;
+  grid-column-gap: 8px; 
   grid-auto-flow: column;
   max-width: 100%;
-  grid-template-columns: repeat(min-content);
+  grid-template-columns: repeat(min-content); // this is not valid css, and not necessary anyway
   img {
+    // might be good to have a comment here about how you're scaling the images for responsive
     max-width: 100%;
     height: auto;
     display: block;
@@ -24,7 +25,7 @@ const AlbumNav = styled.nav`
     z-index: 1;
     &:hover {
       transform: scale(1.1) rotate(8deg);
-      z-index: 2;
+      z-index: 2; // I'd comment here something like "ensure the hovered element is above the others in z order"
       box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.3);
     }
   }
@@ -45,7 +46,7 @@ const SongList = styled.div`
     padding: 0;
   }
   button {
-    font-family: Rokkitt;
+    font-family: Rokkitt; // Rokkitt, serif ?
     font-size: 25px;
     background: transparent;
     border: 0;
@@ -53,13 +54,13 @@ const SongList = styled.div`
     outline: 0;
     &:hover {
       background: #c71742;
-      color: #000;
+      color: #fff;
       cursor: pointer;
-    }
+    } 
   }
 `
 const SongLyrics = styled.div`
-  white-space: pre-line;
+  white-space: pre-line; // comment here about maintaining poetry's whitespace or something
   padding: 12px 0 30px 0;
 `
 
@@ -79,6 +80,7 @@ class Lyrics extends React.Component {
     })
   }
   handleSongClick(e) {
+    // I might comment something like "set current song or toggle if clicking the same one"
     const checkSong = this.state.currentSong === e.target.dataset.song ? '' : e.target.dataset.song
     this.setState({
       currentSong: checkSong,
@@ -93,6 +95,7 @@ class Lyrics extends React.Component {
           })}
         </AlbumNav>
         <SongList>
+          {/* btw you could destructure the objects you pass to the map iterators 🤷‍♀️ */}
           {lyricData.map(album => {
             if (album.title === this.state.currentAlbum) {
               return (

@@ -1,5 +1,5 @@
 /** @format */
-
+// ^ what's this?
 import fourteenAutumns from '../../public/img/album-faafw.jpg'
 import neverSnowed from '../../public/img/album-neversnowed.jpg'
 import forget from '../../public/img/album-ftna.jpg'
@@ -8,6 +8,7 @@ import noOne from '../../public/img/album-nocek.jpg'
 import nobody from '../../public/img/album-nwtbhanwtl.jpg'
 import itWont from '../../public/img/album-iwbltatt.jpg'
 
+// maybe a comment here about storing the data this way vs. a db or other options
 const lyricData = [
   {
     id: 'faafw',

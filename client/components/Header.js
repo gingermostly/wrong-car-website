@@ -3,6 +3,7 @@ import siteHeader from '../../public/img/site-header.png';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+// why do you need a font family style for the header?
 const HeaderImg = styled.header`
   margin: 0 auto;
   display: flex;
@@ -13,6 +14,7 @@ const HeaderImg = styled.header`
   font-family: Rokkitt, serif;
 `;
 
+// could this be a styled.nav ?
 const NavMenu = styled.div`
   width: 100%;
   ul {
@@ -48,6 +50,7 @@ const NavMenu = styled.div`
         transform: scaleX(1);
       }
     }
+    // could be good to have a comment here about how this is the line underneath
     &:after {
       content: '';
       position: absolute;
@@ -63,6 +66,7 @@ const NavMenu = styled.div`
 `;
 
 class Header extends React.Component {
+  // unnecessary
   constructor(props) {
     super(props);
   }
@@ -72,6 +76,25 @@ class Header extends React.Component {
         <HeaderImg>
           <img src={siteHeader} />
         </HeaderImg>
+        {/* 
+          if I were making this component, I would create an array of objects
+          representing the links and generate it by mapping over the array
+          I would also probably make the list a component
+          e.g. const linkList = [{title: 'home', path: '/'}, {title: 'tour dates', path: '/tour'}, {etc}]
+          const LinkList = () => {
+            return (
+              <ul>
+                {linkList.map((item) => {
+                  return (
+                    <li key={item.title}>
+                      <Link to={item.path}>{item.title}</Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+            then call <LinkList />
+        */}
         <ul>
           <li>
             <Link to="/">home</Link>
