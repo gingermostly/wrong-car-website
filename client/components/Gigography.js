@@ -1,12 +1,6 @@
 import * as React from 'react';
-let testGig = {
-      date: 'June 12th',
-      city: 'Toronto',
-      state: 'ON',
-      country: 'Canada',
-      venue: 'Woodbine Park',
-      details: 'Bestival Music Festival - with the Cure'
-  }
+import moment from 'moment';
+
 class Gigography extends React.Component {
   constructor(props) {
     super(props);
@@ -49,10 +43,9 @@ class Gigography extends React.Component {
   }
   renderGigTableRows(){
     return this.state.data.map(gig => {
-      console.log(gig.date)
       return (
         <tr>
-          <td>{gig.date}</td>
+          <td>{moment(gig.date).format('DD MMM')}</td>
           <td>{gig.city}</td>
           <td>{gig.country}</td>
           <td>{gig.venue}</td>
