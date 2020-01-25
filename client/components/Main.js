@@ -6,6 +6,7 @@ import Photos from './Photos.js';
 import Tour from './Tour.js';
 import Home from './Home.js';
 import Decoder from './Decoder.js';
+import DatabaseEntry from './DatabaseEntry.js';
 
 const Main = () => (
   <main>
@@ -16,6 +17,7 @@ const Main = () => (
       <Route path="/photos" component={Photos} />
       <Route path="/tour" component={Tour} />
       <Route path="/decoder" component={Decoder} />
+      <Route path="/databaseentry" component={DatabaseEntry} />
     </Switch>
   </main>
 );

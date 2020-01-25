@@ -8,7 +8,6 @@ Rebuild of fan website application for Scottish band the Twilight Sad using Reac
 * Run 'npm install' to install dependencies
 * Run 'npm start' to start server
 * Start build and watch by running 'npm run build'
-* Start webpack dev server by running 'npm run dev-server'
 
 ## Author
 

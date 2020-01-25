@@ -11,7 +11,7 @@ const AlbumNav = styled.nav`
   grid-auto-flow: column;
   max-width: 100%;
   img {
-    // might be good to have a comment here about how you're scaling the images for responsive
+    // scale images for responsive layout
     max-width: 100%;
     height: auto;
     display: block;

@@ -10,12 +10,22 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', express.static(path.join(__dirname, '../public')));
 
-app.get('/*', function(req, res) {
+app.get('/gigs', (req, res) => {
+  db.Gig.find({}, (err, data)=>{
+    if(err) {
+      console.error(err)
+    }
+    res.json(data)
+  })
+})
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'), function(err) {
     if (err) {
       res.status(500).send(err);
     }
   });
 });
+
+
 
 app.listen(port, () => console.log(`listening on port ${port}!`));
