@@ -4,13 +4,7 @@ import { render } from 'react-dom';
 class DataForm extends React.Component{
     constructor(props){
         super(props);
-        this.state = {
-            date: '',
-            city: '',
-            country: '',
-            venue: '',
-            details: ''
-        }
+        this.state = {};
     }
     handleChange(e){
         let nam = e.target.name;
@@ -19,8 +13,7 @@ class DataForm extends React.Component{
             [nam]: val
         })
     } 
-    handleSubmit(e){
-        e.preventDefault();
+    handleSubmit(){
         fetch('http://127.0.0.1:3000/gigs', {
             method: 'POST',
             headers: {
@@ -29,7 +22,10 @@ class DataForm extends React.Component{
             body: JSON.stringify(this.state)
         })
         .then(res => {
-            res.json()
+            res.json();
+        })
+        .catch(err => {
+            console.error(err)
         })
     }
     render(){

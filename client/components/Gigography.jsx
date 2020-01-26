@@ -1,4 +1,5 @@
 import * as React from 'react';
+import DataForm from './DataForm.jsx';
 import moment from 'moment';
 
 class Gigography extends React.Component {
@@ -21,12 +22,15 @@ class Gigography extends React.Component {
   }
   render() {
     return (
-      <table>
-        {this.renderGigTableHeader()}
-        <tbody>
-          {this.renderGigTableRows()} 
-        </tbody>
-      </table>
+      <div>
+        <DataForm />
+        <table>
+          {this.renderGigTableHeader()}
+          <tbody>
+            {this.renderGigTableRows()} 
+          </tbody>
+        </table>
+      </div>
     )
   }
   renderGigTableHeader(){
