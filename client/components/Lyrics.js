@@ -43,7 +43,7 @@ const SongList = styled.div`
     padding: 0;
   }
   button {
-    font-family: Rokkitt; // Rokkitt, serif ?
+    font-family: Rokkitt, serif;
     font-size: 25px;
     background: transparent;
     border: 0;
