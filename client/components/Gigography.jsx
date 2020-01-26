@@ -3,6 +3,32 @@ import DataForm from './DataForm.jsx';
 import moment from 'moment';
 import styled from 'styled-components';
 
+const GigTable = styled.table`
+  width: 100%;
+  border-collapse: collapse;
+  th {
+    text-align: left;
+    color: #c71742;
+    border-bottom: 1px solid #c71742;
+    padding: 4px 6px;
+    vertical-align: top;
+  }
+  td {
+    padding: 4px 6px;
+    white-space: nowrap;
+    vertical-align: top;
+  }
+  td:last-child {
+    white-space: normal;
+  }
+  tbody tr:first-child td {
+    padding-top: 8px;
+  }
+  tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+  }
+`;
+
 class Gigography extends React.Component {
   constructor(props) {
     super(props);
@@ -25,12 +51,12 @@ class Gigography extends React.Component {
     return (
       <div>
         <DataForm />
-        <table>
+        <GigTable>
           {this.renderGigTableHeader()}
           <tbody>
             {this.renderGigTableRows()} 
           </tbody>
-        </table>
+        </GigTable>
       </div>
     )
   }
