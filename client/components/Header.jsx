@@ -17,6 +17,7 @@ const HeaderImg = styled.header`
 // could this be a styled.nav ?
 const NavMenu = styled.div`
   width: 100%;
+  margin-bottom: 24px;
   ul {
     list-style: none;
     display: flex;

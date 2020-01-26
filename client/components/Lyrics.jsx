@@ -5,7 +5,6 @@ import {SlideDown} from 'react-slidedown'
 import 'react-slidedown/lib/slidedown.css'
 
 const AlbumNav = styled.nav`
-  margin-top: 40px;
   display: grid;
   grid-column-gap: 8px; 
   grid-auto-flow: column;
