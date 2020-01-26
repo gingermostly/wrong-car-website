@@ -78,7 +78,7 @@ class Gigography extends React.Component {
       console.log(gig)
       return (
         <tr key={gig._id}>
-          <td>{moment(gig.date).format('DD MMM')}</td>
+          <td>{moment.utc(gig.date).format('DD MMM')}</td>
           <td>{gig.city}</td>
           <td>{gig.country}</td>
           <td>{gig.venue}</td>
