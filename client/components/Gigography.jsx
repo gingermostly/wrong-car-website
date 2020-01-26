@@ -17,14 +17,15 @@ class Gigography extends React.Component {
         this.setState({
           data: data
         })
-        console.log(this.state.data)
       })
   }
   render() {
     return (
       <table>
         {this.renderGigTableHeader()}
-        {this.renderGigTableRows()}
+        <tbody>
+          {this.renderGigTableRows()} 
+        </tbody>
       </table>
     )
   }
@@ -43,8 +44,9 @@ class Gigography extends React.Component {
   }
   renderGigTableRows(){
     return this.state.data.map(gig => {
+      console.log(gig)
       return (
-        <tr>
+        <tr key={gig._id}>
           <td>{moment(gig.date).format('DD MMM')}</td>
           <td>{gig.city}</td>
           <td>{gig.country}</td>

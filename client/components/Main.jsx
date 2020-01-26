@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Lyrics from './Lyrics.js'; // usually these kinds of react component files end in .jsx, you could rename them all
-import Gigography from './Gigography.js';
-import Photos from './Photos.js';
-import Tour from './Tour.js';
-import Home from './Home.js';
-import Decoder from './Decoder.js';
-import DatabaseEntry from './DatabaseEntry.js';
+import Lyrics from './Lyrics.jsx'; 
+import Gigography from './Gigography.jsx';
+import Photos from './Photos.jsx';
+import Tour from './Tour.jsx';
+import Home from './Home.jsx';
+import Decoder from './Decoder.jsx';
+import DatabaseEntry from './DatabaseEntry.jsx';
 
 const Main = () => (
   <main>

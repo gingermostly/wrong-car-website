@@ -7,7 +7,6 @@ class DataForm extends React.Component{
         this.state = {
             date: '',
             city: '',
-            state: '',
             country: '',
             venue: '',
             details: ''
@@ -19,19 +18,31 @@ class DataForm extends React.Component{
         this.setState({
             [nam]: val
         })
-        console.log(this.state)
     } 
+    handleSubmit(e){
+        e.preventDefault();
+        fetch('http://127.0.0.1:3000/gigs', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(this.state)
+        })
+        .then(res => {
+            res.json()
+        })
+    }
     render(){
         return (
-        <form>
+        <form onSubmit={this.handleSubmit.bind(this)}>
             <label>Date:</label>
            <input type="date" name="date" onChange={this.handleChange.bind(this)}></input> 
            <label>City:</label>
            <input type="text" name="city" onChange={this.handleChange.bind(this)}></input>
-           <label>State:</label>
-           <input type="text" name="state" onChange={this.handleChange.bind(this)}></input>
            <label>Country:</label>
            <input type="text" name="country" onChange={this.handleChange.bind(this)}></input> 
+           <label>Venue:</label>
+           <input type="text" name="venue" onChange={this.handleChange.bind(this)}></input> 
            <label>Details:</label>
            <input type="text" name="details" onChange={this.handleChange.bind(this)}></input>
            <input type="submit" value="Submit" />        
