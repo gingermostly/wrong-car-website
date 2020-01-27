@@ -87,7 +87,7 @@ class Lyrics extends React.Component {
       <div>
         <AlbumNav onClick={this.handleClick}>
           {lyricData.map(album => {
-            return <img key={album.title} data-album={album.title} src={album.image} />
+            return <img key={album.id} data-album={album.title} src={album.image} />
           })}
         </AlbumNav>
         <SongList>
@@ -98,9 +98,9 @@ class Lyrics extends React.Component {
                 <div>
                   <h3>{album.title}</h3>
                   <ul>
-                    {album.songs.map(song => {
+                    {album.songs.map((song, i) => {
                       return (
-                        <li key={song.name}>
+                        <li key={i}>
                           <button data-song={song.name} onClick={this.handleSongClick}>
                             {song.name}
                           </button>
