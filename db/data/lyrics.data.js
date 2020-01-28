@@ -2494,24 +2494,369 @@ const lyricData = [
                  you'll stop me from falling in the ground
 
                  please don't leave me alone
+                 i won't cope on my own
 
-        `,
+                 i don't know who to trust
+                 don't let me do my worst
+                 i don't know who to trust
+
+                 running away doesn't feel so bad
+                 running away doesn't feel so bad
+
+                 there's a monster inside of you
+                 someone that you never knew
+                 someone that we didn't choose
+
+                 he won't leave us alone
+                 please don't leave me alone
+
+                 i don't know who to trust
+                 don't let me do my worst
+                 i don't know who to trust
+
+                 there's no love too small
+                 there's no love too small
+
+                 will you take my love instead
+                 and help me rest my head
+                 i'll forget everything they said
+                 if you take my love instead
+
+                 there's no love too small
+                 there's no love too small
+
+                 and i won't be surprised if it kills us all
+                 and i won't be surprised if it kills us all
+                 there's no love too small
+                 i won't be surprised if it kills us all`,
       },
       {
         name: 'sunday day13',
-        lyrics: ``,
+        lyrics: `it's happened too many times
+                 you hit me too many times
+                 it's happened too many times
+                 you hit me too many times
+
+                 it won't be like this all the time
+                 i hope you never 
+                 change your mind
+
+                 it's happened too many times
+
+                 still you're not grieving
+
+                 would you throw me
+                 out into the cold?
+                 will you throw me
+                 out onto the road?
+                 if that's what you were told
+                 will you throw me
+                 out into the cold
+                 if that's what you were told
+
+                 time to shoot the crow
+                 it's our to and fro
+                 time to shoot the crow
+                 it's our to and fro
+
+                 will you always be mine?
+                 if i promise to be nice
+                 please don't ever
+                 change your mind
+
+                 you should hate me
+
+                 would you throw me
+                 out into the cold?
+                 will you throw me
+                 out onto the road?
+                 if that's what you were told
+                 will you throw me
+                 out into the cold
+                 if that's what you were told
+
+                 time to shoot the crow
+                 it's our to and fro
+                 time to shoot the crow
+                 it's our to and fro
+
+                 they just want us dead
+                 you can take it out on me
+                 is it better left unsaid
+                 take it out on me
+
+                 they just want us dead
+                 you can take it out on me
+                 is it better left unsaid
+                 take it out on me`,
       },
       {
         name: 'I/m not here [missing face]',
-        lyrics: ``,
+        lyrics: `you're too close
+                 for comfort
+                 you're too close
+                 to comfort me
+                 
+                 it's too close
+                 for comfort
+                 it's too close
+                 to comfort me
+                 
+                 don't stop if the
+                 tears turn bad
+                 i'll drink
+                 everything in sight
+                 it doesn't stop when
+                 the tears run dry
+                 i'll drink
+                 everything in sight
+                 
+                 i don't want to be
+                 around you anymore
+                 i can't stand to be
+                 around you anymore
+                 i don't want to be
+                 around this anymore
+                 
+                 you don't want to be
+                 around me anymore
+                 i don't want to be
+                 around me anymore
+                 you can't stand to be
+                 around me anymore
+                 
+                 and i'm not here
+                 and it's all too
+                 far too clear
+                 
+                 forgo the summer
+                 there's no light
+                 so i can't see
+                 
+                 you're too close
+                 for comfort
+                 you're too close
+                 to comfort me
+                 
+                 will you stop if 
+                 the tears turn bad?
+                 i'll drink
+                 everything in sight
+                 will you stop when
+                 the tears run dry?
+                 i'll drink
+                 everything in sight
+                 
+                 i don't want to be
+                 around you anymore
+                 i can't stand to be
+                 around you anymore
+                 i don't want to be
+                 around this anymore
+                 
+                 you don't want to be
+                 around me anymore
+                 i don't want to be
+                 around me anymore
+                 you can't stand to be
+                 around me anymore
+                 
+                 and i'm not here
+                 and it's all too
+                 far too clear
+                 
+                 it's too close
+                 it's too close
+                 you're too close
+                 you're too close
+                 
+                 i don't want to be
+                 around you anymore
+                 i can't stand to be
+                 around you anymore
+                 i don't want to be 
+                 around you anymore
+                 
+                 you don't want to be
+                 around me anymore
+                 i don't want to be
+                 around me anymore
+                 i can't stand to be
+                 around me anymore
+                 
+                 and what are you doing?
+                 and why do you do this?
+                 why do you do
+                 this to yourself?
+                 and why do you do
+                 this to yourself?
+                 
+                 and what are you doing?
+                 and why do you do this?
+                 why do you do
+                 this to yourself?
+                 and why do you do
+                 this to yourself?
+                 
+                 what are you doing?
+                 why do you do this?
+                 why do you do
+                 this to yourself?`,
       },
       {
         name: 'auge/maschine',
-        lyrics: ``,
+        lyrics: `you're so sincere
+                 i know you're a liar
+                 oh so sincere
+                 we all love a trier
+                 
+                 nowhere to
+                 hide from this
+                 what have they
+                 done to you
+                 
+                 i can't believe
+                 you hit me
+                 i don't know
+                 where to go
+                 i can't believe
+                 you hit me
+                 and it'll never show
+                 
+                 i can't believe
+                 you hit me
+                 i don't know
+                 where to go
+                 i can't believe
+                 you hit me
+                 and it'll never show
+                 
+                 closing our ears
+                 i know you're a liar
+                 
+                 oh so sincere
+                 no smoke without fire
+                 
+                 you stood there
+                 and you watched it
+                 you stood there and
+                 you watched it happen
+                 you stood there
+                 and you watched it
+                 
+                 i can't believe
+                 you hit me
+                 i don't know
+                 where to go
+                 i can't believe
+                 you hit me
+                 and it'll never show
+                 
+                 i can't believe
+                 you hit me
+                 i don't know
+                 where to go
+                 i can't believe
+                 you hit me
+                 and it'll never show
+                 
+                 do you think that
+                 we're scared?
+                 and they won't
+                 come for you?
+                 will they
+                 come for you?
+                 we will come for you
+                 
+                 you took my eyes
+                 you took my eyes
+                 you took my eyes
+                 you took my eyes
+                 
+                 i can't believe
+                 you hit me
+                 i don't know
+                 where to go
+                 i can't believe
+                 you hit me
+                 and it'll never show
+                 
+                 i can't believe
+                 you hit me
+                 i don't know
+                 where to go
+                 i can't believe
+                 you hit me
+                 and it'll never show
+                 
+                 you took my eyes
+                 you took my eyes
+                 you took my eyes
+                 you took my eyes`,
       },
       {
         name: 'keep it all to myself',
-        lyrics: ``,
+        lyrics: `the love that you see
+                 for you not for me
+                 you can't take
+                 any anymore
+                 
+                 don't want
+                 you to see me
+                 believe me
+                 i'm hiding my
+                 face in my hands
+                 
+                 can't be happy with me?
+                 what is it you see?
+                 what did you fall for?
+                 
+                 when i lose sight
+                 i see you all the time
+                 
+                 i've got no patience
+                 don't let this end
+                 too many feelings
+                 keep it all to myself
+                 keep it all to myself
+                 
+                 you put up with me
+                 and the love
+                 that you see
+                 you deserve
+                 so much more
+                 
+                 believe me
+                 if you see me
+                 hiding my face
+                 in my hands
+                 
+                 can't be happy with me?
+                 what is it you see?
+                 what did you fall for?
+                 
+                 when i lose sight
+                 i see you all the time
+                 
+                 i've got no patience
+                 don't let this end
+                 too many feelings
+                 keep it all to myself
+                 keep it all to myself
+                 
+                 keep you all to myself
+                 keep you all to myself
+                 
+                 and it's not easy, easy
+                 don't want you
+                 to see me, see me
+                 
+                 and it's not easy, easy
+                 don't want you
+                 to see me, see me
+                 
+                 don't want you 
+                 to see me, see me`,
       },
       {
         name: 'girl chewing gum',
@@ -2691,7 +3036,63 @@ const lyricData = [
       },
       {
         name: 'videograms',
-        lyrics: ``,
+        lyrics: `i won't keep
+                 all the hurt you gave to me
+                 i'm scared of everyone i meet
+                 and i can tell your talk is cheap
+                 
+                 you can't delete
+                 all the names that you've called me
+                 and i'm not even scared of these
+                 i'm keeping secrets you can't see
+                 
+                 on the hook
+                 a touch without a second look
+                 i'm keeping this far from you
+                 your stories that won't come true
+                 
+                 so don't start
+                 don't you start on me
+                 don't start
+                 don't you start on me
+                 don't start
+                 don't you start on me
+                 
+                 i'm yet to see
+                 all the things you saved for me
+                 and i'm not even scared of these
+                 the hurt is something i don't need
+                 
+                 on the hook
+                 a touch without a second look
+                 i'm keeping secrets far from you
+                 your stories that won't come true
+                 
+                 so don't start
+                 don't you start on me
+                 don't start
+                 don't you start on me
+                 don't start
+                 don't you start on me
+                 
+                 is it still me that you love
+                 is it still me that you love
+                 is it still me that you love
+                 cause i'm not sure
+                 
+                 to the arms you know you'll never go
+                 with the chance to prove it's not a joke
+                 and we drink to try to improve our mood
+                 and we go to the places we never should
+                 
+                 is it still me that you love
+                 is it still me that you love
+                 cause i'm not sure
+                 
+                 i'm afraid to tell you when you're wrong
+                 i'm afraid to tell you when you're wrong
+                 and i'm afraid to tell you when you're wrong
+                 and i'm not sure`,
       },
     ],
   },
