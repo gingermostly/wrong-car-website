@@ -75,7 +75,6 @@ class Gigography extends React.Component {
   }
   renderGigTableRows(){
     return this.state.data.map(gig => {
-      console.log(gig)
       return (
         <tr key={gig._id}>
           <td>{moment.utc(gig.date).format('DD MMM')}</td>

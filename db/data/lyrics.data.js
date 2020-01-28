@@ -1,16 +1,7 @@
-import fourteenAutumns from '../../public/img/album-faafw.jpg'
-import neverSnowed from '../../public/img/album-neversnowed.jpg'
-import forget from '../../public/img/album-ftna.jpg'
-import wrongCar from '../../public/img/album-wrongcar.jpg'
-import noOne from '../../public/img/album-nocek.jpg'
-import nobody from '../../public/img/album-nwtbhanwtl.jpg'
-import itWont from '../../public/img/album-iwbltatt.jpg'
-
-// to-do: create lyric schema and model and store this info in database instead of data file
 const lyricData = [
   {
     id: 'faafw',
-    image: fourteenAutumns,
+    image: 'https://i.imgur.com/BCjxrra.jpg',
     title: 'fourteen autumns & fifteen winters',
     songs: [
       {
@@ -470,7 +461,7 @@ const lyricData = [
   },
   {
     id: 'neversnowed',
-    image: neverSnowed,
+    image: 'https://i.imgur.com/601BXNP.jpg',
     title: 'here it never snowed, afterwards it did',
     songs: [
       {
@@ -497,7 +488,7 @@ const lyricData = [
   },
   {
     id: 'ftna',
-    image: forget,
+    image: 'https://i.imgur.com/JmueDGL.jpg',
     title: 'forget the night ahead',
     songs: [
       {
@@ -1009,8 +1000,8 @@ const lyricData = [
   },
   {
     id: 'wrongcar',
-    image: wrongCar,
-    album: 'the wrong car',
+    image: 'https://i.imgur.com/F5LVm7s.jpg',
+    title: 'the wrong car',
     songs: [
       {
         name: 'the wrong car',
@@ -1158,7 +1149,7 @@ const lyricData = [
   },
   {
     id: 'nocek',
-    image: noOne,
+    image: 'https://i.imgur.com/XSyRlau.jpg',
     title: 'no one can ever know',
     songs: [
       {
@@ -1688,7 +1679,7 @@ const lyricData = [
   },
   {
     id: 'nwtbhanwtl',
-    image: nobody,
+    image: 'https://i.imgur.com/gvGTUSR.jpg',
     title: 'nobody wants to be here and nobody wants to leave',
     songs: [
       {
@@ -2325,24 +2316,186 @@ const lyricData = [
   },
   {
     id: 'iwbltatt',
-    image: itWont,
+    image: 'https://i.imgur.com/9DCY6fl.jpg',
     title: 'it won/t be like this all the time',
     songs: [
       {
         name: '[10 good reasons for modern drugs]',
-        lyrics: ``,
+        lyrics: `we're hanging on by a thread
+                 and you keep bowing your head
+                 and did they follow you home in the night
+
+                 and if this isn't love
+                 and there's no push without shuv
+                 i think they followed me home in the night
+
+                 they said the screaming wasn't loud
+                 a heavy heart hammered you down
+                 you said the screaming wasn't loud
+
+                 and i'll call you, call you all night
+                 i'll call you, call you all night
+                 and i called you, called you all night
+
+                 and now the cracks all start to show
+                 i see the cracks all start to show
+
+                 and do they understand you
+                 and do they call out your name
+                 and do they even miss you
+                 and all these boys look the same
+
+                 did they try to hear you
+                 when they called out your name
+                 and do they even miss you
+                 and do they shoulder the blame
+
+                 and do they understand you
+                 and do they call out your name
+                 and do they even miss you
+                 and all these boys look the same
+
+                 and why can't you remember me
+                 and why can't you remember me
+                 i've seen it all before
+                 i've seen it all before
+
+                 and why can't you remember me
+                 and why can't you remember me
+                 i've seen it all before
+                 i've seen it all before
+
+                 and why can't you remember me
+                 and why can't you remember me
+                 i've seen it all before
+                 i've seen it all before
+                 
+                 and why can't you remember me
+                 and why can't you remember me
+                 i've seen it all before
+                 i've seen it all before`,
       },
       {
         name: 'shooting dennis hopper shooting',
-        lyrics: ``,
+        lyrics: `why did you do that?
+                 we're not talking anymore
+                 why did you do that?
+                 i know something you don't know
+                 
+                 you take good care of yourself
+                 you take good care of your friends
+                 as you drag them by the hair
+                 it's a secret you won't share with me
+
+                 do what you're told
+                 you didn't see it, cover up and go
+                 do what you're told
+
+                 i caught you kissing on the back stairs
+                 no it's not fair
+                 i caught you kissing on the back stairs
+                 are you not scared?
+                 i saw you kill him on the back stairs
+
+                 so keep your hands by your side
+                 is it too much to be kind
+                 you don't drink to his health
+                 through your arms he fell
+
+                 you take good care of friends
+                 you take good care of yourself
+                 as you drag them by the hair
+                 the secret you won't share with me
+
+                 do what you're told
+                 you didn't see it, cover up and go
+                 do what you're told
+                 
+                 i saw you kill him on the back stairs
+                 no it's not fair
+                 i caught you kissing on the back stairs
+                 are you not scared?
+                 i saw you kill him on the back stairs
+
+                 you're kicking him
+                 you're killing him
+                 you're kicking him
+
+                 i caught you kissing on the back stairs
+
+                 i saw you kicking
+                 i saw you kicking him, kicking him
+
+                 i saw you kill him
+
+                 i caught you kissing on the back stairs
+
+                 you're kicking him
+                 you're killing him
+                 you're kicking him`,
       },
       {
         name: 'the arbor',
-        lyrics: ``,
+        lyrics: `i'm tired
+                 i can't believe that you will die
+
+                 so tired
+                 my eyes are closed you said goodbye
+
+                 why couldn't you leave me be
+                 why couldn't you leave it be
+                 why couldn't we leave it be
+
+                 i watch you slowly slip away
+
+                 why did you leave in the night
+                 played god so long
+                 played god so long
+                 played god for so long
+                 i never wanted to fight
+                 played god so long
+                 been gone for so long
+                 why did you leave in the night
+
+                 you were tired
+                 closed the door turned out the light
+
+                 so tired
+                 my eyes were closed you said goodnight
+
+                 why couldn't you leave me be
+                 why couldn't you leave it be
+                 why couldn't we leave it be
+
+                 i watch you slowly slip away
+
+                 why did you leave in the night
+                 played god so long
+                 played god so long
+                 played god for so long
+                 i never wanted to fight
+                 played god so long
+                 been gone for so long
+                 why did you leave in the night
+
+                 why did you leave in the night
+                 played god so long
+                 played god so long
+                 played god for so long
+                 i never wanted to fight
+                 played god so long
+                 been gone for so long
+                 why did you leave in the night`,
       },
       {
         name: 'VTr',
-        lyrics: ``,
+        lyrics: `i've been waiting for you
+                 there's nothing that i'd rather do
+                 you'll stop me from falling in the ground
+
+                 please don't leave me alone
+
+        `,
       },
       {
         name: 'sunday day13',
@@ -2362,11 +2515,179 @@ const lyricData = [
       },
       {
         name: 'girl chewing gum',
-        lyrics: ``,
+        lyrics: `i'm leaving now
+                 won't see you again
+
+                 i'm leaving now
+                 won't see you again
+
+                 put me in the ground
+                 and i don't want to 
+                 be here anymore
+                 put me in the ground
+
+                 put me in the ground
+                 and i don't want to 
+                 be here anymore
+                 put me in the ground
+
+                 i'm leaving now
+                 won't see you again
+
+                 i'm leaving now
+                 won't see you again
+
+                 put me in the ground
+                 and i don't want to 
+                 be here anymore
+                 put me in the ground
+
+                 put me in the ground
+                 and i don't want to 
+                 be here anymore
+                 put me in the ground
+
+                 this is goodbye
+                 i'm leaving my best behind
+
+                 and i know i tried
+                 i'm leaving my best behind
+
+                 this is goodbye
+                 i'm leaving my best behind
+
+                 and i know i tried
+                 i'm leaving my best behind
+                 
+                 put me in the ground
+                 put me in
+
+                 put me in the ground
+                 put me in
+
+                 put me in the ground
+                 put me in
+
+                 put me in the ground
+                 put me in
+
+                 i'm leaving now
+                 won't see you again
+
+                 i'm leaving now
+                 won't see you again
+
+                 i'm leaving now
+                 won't see you again
+
+                 i'm leaving now
+                 won't see you again`,
       },
       {
         name: 'let/s get lost',
-        lyrics: ``,
+        lyrics: `i'm losing, i'm losing
+                 you everyday
+                 i see that i'm losing,
+                 i'm losing you everyday
+                 and i'm losing,
+                 i'm losing you everyday
+                 i know that i'm losing,
+                 i'm losing you everyday
+
+                 i see it coming
+                 i still do nothing
+                 you won't let
+                 me in today
+
+                 you're not the first
+                 run away from
+                 my words
+                 deaf to
+                 everything i say
+
+                 and i see it coming
+                 i still do nothing
+                 you won't let
+                 me in today
+
+                 i'll do my worst
+                 you can't be nursed
+                 much to our dismay
+                 
+                 i'm losing, i'm losing
+                 you everyday
+                 i know that i'm losing,
+                 i'm losing you everyday
+                 and i'm losing,
+                 i'm losing you everyday
+                 i know that i'm losing,
+                 i'm losing you everyday
+
+                 but i'm still yours
+                 i'm still yours
+                 you know
+                 i'm still yours
+                 i'm still yours 
+                 you know
+
+                 i see it coming
+                 i still do nothing
+                 you won't let
+                 me in today
+
+                 i'll do my worst
+                 you can't be nursed
+                 much to our dismay
+
+                 it's just another
+                 heartache to me
+                 it's just another
+                 heartache to me
+                 it's just another
+                 heartache to me
+                 it's just another
+                 heartache
+                 it's just another 
+                 heartache
+
+                 we got lost
+                 we got lost
+                 i don't know
+                 what to do
+                 i don't know
+                 what to do
+
+                 we got lost
+                 you know that
+                 we, we got lost
+                 i don't know
+                 what to do
+                 i don't know 
+                 what to do
+
+                 and i'm losing
+                 i'm losing
+                 i'm losing
+                 i'm losing
+
+                 we got lost
+                 we got lost
+                 we got lost
+                 we got lost
+                 we got lost
+                 we got lost
+
+                 i don't know 
+                 what to do
+                 i don't know 
+                 what to do
+
+                 we got lost
+
+                 i don't know 
+                 what to do
+                 i don't know 
+                 what to do`,
       },
       {
         name: 'videograms',
@@ -2376,4 +2697,4 @@ const lyricData = [
   },
 ]
 
-export default lyricData
+module.exports = { lyricData };

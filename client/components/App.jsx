@@ -22,10 +22,6 @@ const MainContainer = styled.div`
 `;
 
 class App extends React.Component {
-  // unnecessary
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       // FYI you can do <>...</> instead of <React.Fragment> if you want

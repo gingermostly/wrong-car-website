@@ -31,7 +31,15 @@ app.post('/gigs', (req, res) => {
     if(err) {
       console.error(err)
     }
-    console.log(data)
+    res.json(data)
+  })
+})
+
+app.get('/albums', (req, res) => {
+  db.Album.find({}, (err, data) => {
+    if (err) {
+      console.error(err)
+    }
     res.json(data)
   })
 })

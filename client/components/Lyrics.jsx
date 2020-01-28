@@ -1,8 +1,7 @@
-import * as React from 'react'
-import styled from 'styled-components'
-import lyricData from '../data/lyrics.data.js'
-import {SlideDown} from 'react-slidedown'
-import 'react-slidedown/lib/slidedown.css'
+import * as React from 'react';
+import styled from 'styled-components';
+import {SlideDown} from 'react-slidedown';
+import 'react-slidedown/lib/slidedown.css';
 
 const AlbumNav = styled.nav`
   display: grid;
@@ -66,6 +65,7 @@ class Lyrics extends React.Component {
     this.state = {
       currentAlbum: '',
       currentSong: '',
+      data: []
     }
     this.handleClick = this.handleClick.bind(this)
     this.handleSongClick = this.handleSongClick.bind(this)
@@ -74,6 +74,17 @@ class Lyrics extends React.Component {
     this.setState({
       currentAlbum: e.target.dataset.album,
     })
+  }
+  componentDidMount(){
+    fetch('http://127.0.0.1:3000/albums')
+      .then(res =>{
+        return res.json()
+      })
+      .then(data => {
+        this.setState({
+          data: data
+        })
+      })
   }
   handleSongClick(e) {
     // Set current song to clicked song. If clicked song is same as current song, toggle by setting current song to ''
@@ -86,21 +97,21 @@ class Lyrics extends React.Component {
     return (
       <div>
         <AlbumNav onClick={this.handleClick}>
-          {lyricData.map(album => {
+          {this.state.data.map(album => {
             return <img key={album.id} data-album={album.title} src={album.image} />
           })}
         </AlbumNav>
         <SongList>
           {/* btw you could destructure the objects you pass to the map iterators 🤷‍♀️ */}
-          {lyricData.map(album => {
+          {this.state.data.map(album => {
             if (album.title === this.state.currentAlbum) {
               return (
                 <div>
                   <h3>{album.title}</h3>
-                  <ul>
-                    {album.songs.map((song, i) => {
+                  <ul key={album._id}>
+                    {album.songs.map(song => {
                       return (
-                        <li key={i}>
+                        <li key={song.name}>
                           <button data-song={song.name} onClick={this.handleSongClick}>
                             {song.name}
                           </button>

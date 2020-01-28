@@ -17,9 +17,42 @@ const GigSchema = new mongoose.Schema({
   details: String
 });
 
+const SongSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  lyrics: {
+    type: String,
+    required: true
+  }
+});
+
+const AlbumSchema = new mongoose.Schema({
+  id: {
+    type: String,
+    required: true
+  },
+  image: {
+    type: String,
+    required: true
+  },
+  title: {
+    type: String,
+    required: true
+  },
+  songs: [
+    SongSchema
+  ]
+});
+
+const Song = new mongoose.model('Song', SongSchema);
+
+const Album = new mongoose.model('Album', AlbumSchema);
+
 const Gig = new mongoose.model('Gig', GigSchema);
 
-module.exports = { Gig, GigSchema }
+module.exports = { Gig, GigSchema, Song, SongSchema, Album, AlbumSchema }
 
 
 
