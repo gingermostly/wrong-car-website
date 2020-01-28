@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Header from './Header.js';
-import Main from './Main.js';
+import Header from './Header.jsx';
+import Main from './Main.jsx';
 import { createGlobalStyle } from 'styled-components';
 import styled from 'styled-components';
 
@@ -22,10 +22,6 @@ const MainContainer = styled.div`
 `;
 
 class App extends React.Component {
-  // unnecessary
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       // FYI you can do <>...</> instead of <React.Fragment> if you want

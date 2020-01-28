@@ -18,6 +18,32 @@ app.get('/gigs', (req, res) => {
     res.json(data)
   })
 })
+
+app.post('/gigs', (req, res) => {
+  let gig = new db.Gig({
+    date: req.body.date,
+    city: req.body.city,
+    country: req.body.country,
+    venue: req.body.venue,
+    details: req.body.details
+  });
+  gig.save((err, data) => {
+    if(err) {
+      console.error(err)
+    }
+    res.json(data)
+  })
+})
+
+app.get('/albums', (req, res) => {
+  db.Album.find({}, (err, data) => {
+    if (err) {
+      console.error(err)
+    }
+    res.json(data)
+  })
+})
+
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/index.html'), function(err) {
     if (err) {
