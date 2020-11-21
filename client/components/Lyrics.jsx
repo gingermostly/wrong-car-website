@@ -76,7 +76,7 @@ class Lyrics extends React.Component {
     })
   }
   componentDidMount(){
-    fetch('http://127.0.0.1:3000/albums')
+    fetch('http://localhost:1337/albums')
       .then(res =>{
         return res.json()
       })
@@ -102,7 +102,7 @@ class Lyrics extends React.Component {
           })}
         </AlbumNav>
         <SongList>
-          {/* btw you could destructure the objects you pass to the map iterators 🤷‍♀️ */}
+          {/* tech debt: could possibly be restructured now that relational database entries exist*/}
           {this.state.data.map(album => {
             if (album.title === this.state.currentAlbum) {
               return (

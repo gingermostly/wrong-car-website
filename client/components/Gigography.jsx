@@ -1,5 +1,4 @@
 import * as React from 'react';
-import DataForm from './DataForm.jsx';
 import moment from 'moment';
 import styled from 'styled-components';
 
@@ -37,7 +36,7 @@ class Gigography extends React.Component {
     }
   }
   componentDidMount() {
-    fetch('http://127.0.0.1:3000/gigs')
+    fetch('http://localhost:1337/gigs')
       .then((res) => {
         return res.json()
       })
@@ -50,7 +49,6 @@ class Gigography extends React.Component {
   render() {
     return (
       <div>
-        <DataForm />
         <GigTable>
           {this.renderGigTableHeader()}
           <tbody>

@@ -5,19 +5,11 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const db = require('../db/index.js');
 
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', express.static(path.join(__dirname, '../public')));
-
-app.get('/gigs', (req, res) => {
-  db.Gig.find({}, (err, data)=>{
-    if(err) {
-      console.error(err)
-    }
-    res.json(data)
-  })
-})
 
 app.post('/gigs', (req, res) => {
   let gig = new db.Gig({
