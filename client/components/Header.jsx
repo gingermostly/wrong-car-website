@@ -71,7 +71,8 @@ class Header extends React.Component {
     return (
       <NavMenu>
         <HeaderImg>
-          <img src={siteHeader} />
+          {/* find better solution for this image */}
+          <img src={'/' + siteHeader} />
         </HeaderImg>
         <LinkList />
       </NavMenu>

@@ -1,9 +1,28 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
-// could be function component
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: []
+    }
+  }
+  componentDidMount(){
+    fetch('http://localhost:1337/blogs')
+      .then(res =>{
+        return res.json()
+      })
+      .then((data) => {
+          this.setState({
+            data: data
+        })
+      })
+    }
   render() {
-    return <div>HOME</div>;
+      return this.state.data.map(entry => {
+        return <Link to={`/articles/${entry.article_id}`}><div>{entry.title}</div></Link>
+      })
   }
 }
 

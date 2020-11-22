@@ -6,7 +6,8 @@ import Photos from './Photos.jsx';
 import Tour from './Tour.jsx';
 import Home from './Home.jsx';
 import Decoder from './Decoder.jsx';
-
+import Article from './Article.jsx';
+// combine this with sec/index.js
 const Main = () => (
   <main>
     <Switch>
@@ -16,6 +17,7 @@ const Main = () => (
       <Route path="/photos" component={Photos} />
       <Route path="/tour" component={Tour} />
       <Route path="/decoder" component={Decoder} />
+      <Route path="/articles/:id" component={Article} />
     </Switch>
   </main>
 );
