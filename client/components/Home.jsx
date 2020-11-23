@@ -2,7 +2,6 @@ import * as React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
-import Article from './Article.jsx';
 
 const truncateStr = (str, num) => {
   if (str.length <= num) {

@@ -1,84 +1,41 @@
 import * as React from 'react';
-import LightBox from "./LightBox.jsx";
+import promoThumb from '../../public/img/promo-thumb.jpg';
 import styled from 'styled-components';
 
-const ImageContainer = styled.div`
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
-  grid-gap: 10px;
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-`;
+const ThumbOverlay = styled.div`
+    position: relative;
+    width: 50%;
+    transition: 0.5s ease;
+    &:hover img {
+        opacity: 1;
+        cursor: pointer;
+    }
+    img {
+        display: block;
+        border: 1px solid #eee;
+        width: 100%;
+        height: auto;
+        opacity: 0.5;
+    }
+    &:hover div {
+        opacity: 1;
+        cursor: pointer;
+    }  
+    div {
+        position: absolute;
+        text-align: center;
+        color: #eee;
+        font: inherit;
+        font-size: 2em;
+        height: 60%;
+        width: 100%;
+        bottom: 0;
+        opacity: 0;        
+    }
+`
 
-import photo1 from "../../public/img/photos/2013_ColourPromo01.jpg";
-import photo2 from "../../public/img/photos/2014_NicolaCollins01.jpg";
-import photo3 from "../../public/img/photos/2014_Stripes.jpg";
-
-const photoList = [
-  {
-    photo: photo1,
-    attribution: "unknown",
-  },
-  {
-    photo: photo2,
-    attribution: "Nicola Collins",
-  },
-  {
-    photo: photo3,
-    attribution: "unknown",
-  },
-];
-
-class Photos extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      lightBoxPhoto: -1,
-    };
-  }
-  render() {
-    return (
-      <>
-        <ImageContainer>
-          {photoList.map(({photo, attribution}, i) => {
-            return (
-              <div key={i} onClick={() => { this.handlePhotoClick(i) }}>
-                <img src={photo} alt={`Photo by ${attribution}`} />
-                <p>Photo by {attribution}</p>
-              </div>
-            );
-          })}
-        </ImageContainer>
-        {this.state.lightBoxPhoto > -1 &&
-          <LightBox
-            current={this.state.lightBoxPhoto}
-            photos={photoList}
-            onClose={this.handleLightBoxClose}
-            onNavigate={this.updateCurrentPhoto}
-          />
-        }
-      </>
-    );
-  }
-  handlePhotoClick = (number) => {
-    this.setState({
-      lightBoxPhoto: number
-    });
-  }
-  handleLightBoxClose = () => {
-    this.setState({
-      lightBoxPhoto: -1,
-    });
-  }
-  updateCurrentPhoto = (index) => {
-    this.setState({
-      lightBoxPhoto: index,
-    });
-  }
+const Photos = () => {
+    return <ThumbOverlay><img src={promoThumb} /><div>PROMO</div></ThumbOverlay>
 }
 
-export default Photos;
+export default Photos
