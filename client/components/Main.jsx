@@ -7,7 +7,7 @@ import Tour from './Tour.jsx';
 import Home from './Home.jsx';
 import Decoder from './Decoder.jsx';
 import Article from './Article.jsx';
-// combine this with sec/index.js
+// combine this with src/index.js
 const Main = () => (
   <main>
     <Switch>

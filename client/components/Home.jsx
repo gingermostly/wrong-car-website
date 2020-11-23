@@ -1,6 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import moment from 'moment';
+import Article from './Article.jsx';
 
 const truncateStr = (str, num) => {
   if (str.length <= num) {
@@ -9,21 +11,31 @@ const truncateStr = (str, num) => {
   return str.slice(0, num) + '...'
 }
 
-const ArticleButton = styled.button`
-  background: #c71742;
+const ArticleLink = styled(Link)`
+  display: inline-block;
   border: 0;
   margin-top: 1em;
-  padding: 8px;
-  border-radius: 2px;
-  color: #fff;
+  color: #c71742;
   font: inherit;
-  a {
-    color: #fff;
-    font: inherit;
-    text-decoration: none;
+  text-decoration: none;
+  position: relative;
+  &:hover {
+    background: transparent;
+    &:after {
+      transform: scaleX(1);
+    }
   }
-  a:hover {
-    cursor: pointer
+  // pseudoclass to generate line beneath links 
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #c71742;
+    transform: scaleX(0);
+    transition: transform 400ms ease;
   }
 `
 class Home extends React.Component {
@@ -49,9 +61,9 @@ class Home extends React.Component {
         return (
           <div>
             <h2>{entry.title}</h2>
-            <span>{entry.published_at}</span>
+            <span>{moment.utc(entry.published_at).format('MMMM Do, YYYY')}</span>
             <div>{truncateStr(entry.content, 200)}</div>
-              <ArticleButton><Link to={`/articles/${entry.article_id}`}>read more</Link></ArticleButton>   
+           <ArticleLink to={`/articles/${entry.article_id}`}>read more</ArticleLink>
           </div>
           )
       })

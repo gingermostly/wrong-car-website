@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from "react-router";
+import moment from 'moment';
 
 class ArticleBase extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class ArticleBase extends React.Component {
       return this.state.data.map(entry => {
         return (<div title={entry.title}>
                   <article>
-                    <h2>{entry.date}</h2>
+                    <h2>{moment.utc(entry.date).format('MMMM Do, YYYY')}</h2>
                     <h2>{entry.title}</h2>
                     <img src={`http://localhost:1337${entry.image.url}`}/>
                     <p>{entry.content}</p>
